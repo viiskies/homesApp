@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/about', function () {
-    return view('voldemaras');
-});
+Route::get('/', 'HomeController@index');
+Route::get('/contacts', 'HomeController@contacts');
+Route::get('/about', 'HomeController@about');
