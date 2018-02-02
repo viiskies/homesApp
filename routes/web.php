@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('/contacts', 'HomeController@contacts');
-Route::get('/about', 'HomeController@about');
+Route::get('/', 'HomeController@index')
+    ->name('index');
+
+Route::get('/contacts', 'HomeController@contacts')
+    ->name('kontaktai');
+
+Route::get('/about', 'HomeController@about')
+    ->name('apie');

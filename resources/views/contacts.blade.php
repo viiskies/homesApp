@@ -83,9 +83,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/contacts">Contacts</a>
+                    <a href="{{ route('index') }}">Home</a>
+                    <a href="{{ route('apie') }}">About</a>
+                    <a href="{{ route('kontaktai') }}">Contacts</a>
                 </div>
             </div>
         </div>
